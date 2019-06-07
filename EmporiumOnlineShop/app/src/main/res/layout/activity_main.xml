@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="28pt" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="to"
+        android:textAlignment="center"
+        android:textSize="28pt" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_button_login"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Login"
+            android:textColor="@color/colorButtonSignUp"
+            android:textSize="9pt" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_signup"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Sign up"
+            android:textColor="@color/colorGreyText"
+            android:textSize="9pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

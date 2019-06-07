@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".BrowseActivity">
+
+    <TextView
+        android:id="@+id/topItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Best Sellers"
+        android:textSize="18pt" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topItems"
+        android:id="@+id/scrollView">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:id="@+id/earringsImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                app:srcCompat="@drawable/earrings" />
+
+            <TextView
+                android:id="@+id/earringsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Sapphire Earrings"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/earringsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$45.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/tiresImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                app:srcCompat="@drawable/tires" />
+
+            <TextView
+                android:id="@+id/tiresLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Michelin Tires"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/tiresPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$55.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/caseImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/iphone_case" />
+
+            <TextView
+                android:id="@+id/caseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Iphone 10 Case"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/casePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$10.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/tonerImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/toner" />
+
+            <TextView
+                android:id="@+id/tonerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="HP Toner"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/tonerPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$27.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+            <!--new item-->
+            <ImageView
+                android:id="@+id/notebookImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/moleskine" />
+
+            <TextView
+                android:id="@+id/notebookLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Moleskine Journal"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/notebookPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$20.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+            <!--new item-->
+            <ImageView
+                android:id="@+id/organizerImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/organizer" />
+
+            <TextView
+                android:id="@+id/organizerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Desk Organizer"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/organizerPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$4.50"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/sneakersImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/sneakers" />
+
+            <TextView
+                android:id="@+id/sneakersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Adidas Sneakers"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/sneakersPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_gravity="center"
+                android:text="$90.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/dressImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/dress" />
+
+            <TextView
+                android:id="@+id/dressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Summer Dress"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/dressPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$18.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/bulbImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/bulb" />
+
+            <TextView
+                android:id="@+id/bulbLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Vintage lightbulb"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/bulbPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$3.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/coastersImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/coasters" />
+
+            <TextView
+                android:id="@+id/coastersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Wood coasters"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/coastersPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="$12.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/mouseImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/mouse" />
+
+            <TextView
+                android:id="@+id/mouseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="10"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Kingston Mouse"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/mousePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:text="$40.00"
+                android:fontFamily="@font/nunito_regular"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+            <!--new item-->
+            <ImageView
+                android:id="@+id/creamImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_row="9"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/cream" />
+
+            <TextView
+                android:id="@+id/creamLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="10"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Elf Face Cream"
+                android:textSize="7pt" />
+
+            <TextView
+                android:id="@+id/creamPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="11"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_regular"
+                android:text="$21.00"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="7pt" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bottomtabs"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/scrollView"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home_icon" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/search_icon" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Browse"
+                android:textAlignment="center"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/person_icon" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="Account"
+                android:textAlignment="center"
+                android:textSize="7pt" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

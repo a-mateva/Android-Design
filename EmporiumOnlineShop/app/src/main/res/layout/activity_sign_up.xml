@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Sign up"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        android:textSize="26pt" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="320dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_field"
+        android:layout_below="@+id/signUpText"
+        android:fontFamily="@font/nunito_extrabold"
+        android:hint="Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:shadowRadius="50" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_field"
+        android:layout_below="@+id/nameField"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_extrabold"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="320dp"
+        android:layout_below="@+id/emailField"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_field"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/confirmPasswordField"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordField"
+        android:hint="Repeat password"
+        android:fontFamily="@font/nunito_extrabold"
+        android:background="@drawable/round_field"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signUpBtnSUA"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/confirmPasswordField"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button_signup"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Sign up"
+        android:textColor="@color/colorGreyText"
+        android:textSize="9pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/haveAnAccountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/loginBtnSUA"
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_signup"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Login"
+            android:textColor="@color/colorGreyText"
+            android:textSize="9pt" />
+    </LinearLayout>
+
+</RelativeLayout>

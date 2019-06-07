@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="26pt" />
+
+    <EditText
+        android:id="@+id/emailFieldLA"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_field"
+        android:fontFamily="@font/nunito_extrabold"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:shadowRadius="50" />
+
+    <EditText
+        android:id="@+id/passwordFieldLA"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailFieldLA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_field"
+        android:fontFamily="@font/nunito_extrabold"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/loginBtnLA"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordFieldLA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_signup"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Login"
+        android:textColor="@color/colorGreyText"
+        android:textSize="9pt" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/loginBtnLA">
+
+        <TextView
+            android:id="@+id/forgottenPasswordText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Forgotten password?"
+            android:textAlignment="center"
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/forgottenPasswordLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Click here."
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUpSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/haveAnAccountTextLA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Don't have an account yet?"
+            android:textAlignment="center"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/signUpBtnLA"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button_signup"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="Sign up"
+            android:textColor="@color/colorGreyText"
+            android:textSize="9pt" />
+    </LinearLayout>
+</RelativeLayout>
